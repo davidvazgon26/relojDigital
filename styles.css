@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     --webkit-box-sizing: border-box;
@@ -6,57 +6,87 @@
     box-sizing: border-box;
 }
 
-body{
-    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+body {
+    /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
     /* background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%); */
+    background: #1A2980;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26D0CE, #1A2980);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     color: white;
     font-size: 16px
 }
 
-.wrap{
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 0 15px;
+.wrap {
+    /* width: 90%; */
+    /* max-width: 1000px; */
+    /* margin: 0 25%; */
+    /* padding: 0 15px; */
+    display: flex;
+    justify-content: center;
 }
 
-.widget{
+.widget {
     width: 48%;
     margin: 2em;
 }
 
-.widget p{
+.widget p {
     display: inline-block;
     line-height: 1em;
 }
 
-.fecha{
-    font-family: Oswald, Arial; 
+.fecha {
+    font-family: Oswald, Arial;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 3vw;
     margin-bottom: 0.3125rem;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
     padding: 20px;
     width: 100%;
     border-radius: 4px;
 }
 
-.reloj{
-    font-family: Oswald, Arial; 
+.reloj {
+    font-family: Oswald, Arial;
     width: 100%;
     padding: 20px;
-    font-size: 4em;
+    font-size: 8vw;
     text-align: center;
-    background: rgba(0,0,0,.5);
-    border-radius: 4px;  
+    background: rgba(0, 0, 0, .5);
+    border-radius: 4px;
 }
 
-.reloj .caja-segundos{
-    display:inline-block;
+.reloj .caja-segundos {
+    display: inline-block;
 }
 
 .reloj .segundos,
-.reloj .ampm{
-    font-size: 2rem;
+.reloj .ampm {
+    font-size: 4vw;
     display: block;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+}
+
+.nota{
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    width: 70%;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.by{
+    font-family: Oswald, Arial;
+    font-size: 1.5vw;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
 }
